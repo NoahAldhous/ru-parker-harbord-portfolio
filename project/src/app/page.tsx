@@ -31,7 +31,7 @@ import '../app/dependencies/lightgallery/css/lg-thumbnail.css';
 // import plugins
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 
-export default function homepage() {
+export default function Homepage() {
 
   const images = [
     {

@@ -43,7 +43,10 @@ export default function MasonryGrid({images}:MasonryGridProps){
         columnClassName=""
     >
         {images.map((image, idx) => (
-            <AnimatePresence mode="wait">
+            <AnimatePresence 
+            mode="wait"
+            key={idx}
+            >
             <motion.div
             key={image.alt}
             className='md:overflow-clip'
