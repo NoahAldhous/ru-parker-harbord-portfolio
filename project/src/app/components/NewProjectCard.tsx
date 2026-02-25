@@ -51,12 +51,12 @@ export default function ProjectCard({imageSource, projectTitle, imageAlt, url}:P
                     />
                     <Link 
                         className='transition duration-300 absolute text-2xl text-primary dark:text-dark h-full w-full flex justify-center items-center text-center tracking-wide bg-dark dark:bg-primary opacity-0 lg:hover:opacity-80' 
-                        href={`/project/${url}`}
+                        href={`/photo/${url}`}
                     >
                         {projectTitle}
                     </Link> 
                 </div>
-                <Link href={`/project/${url}`} className="mt-6 lg:hidden">
+                <Link href={`/photo/${url}`} className="mt-6 lg:hidden">
                     {projectTitle}
                 </Link>
             </motion.div> 

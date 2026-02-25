@@ -14,9 +14,17 @@ export default function NavigationBar() {
           href: "/"
         },
         {
-          title: "Projects" ,
-          href: "/project"
+          title: "Photo" ,
+          href: "/photo"
         },
+        // {
+        //   title: "Video" ,
+        //   href: "/video"
+        // },
+        // {
+        //   title: "Weddings" ,
+        //   href: "/weddings"
+        // },
         {
           title: "Film Photography" ,
           href: "/film-photography"
@@ -93,7 +101,7 @@ export default function NavigationBar() {
                         },
                     }}
                 >
-                    Ruby Parker-Harbord
+                    Ru Parker-Harbord
                 </motion.h1>
             </Link>
             <motion.section 
@@ -128,10 +136,10 @@ export default function NavigationBar() {
                                 pathname === item.href 
                                     ? 'opacity-100'
                                     : 'opacity-70'
-                                } p-0 px-2 sm:px-1 md:px-1 lg:px-2 whitespace-nowrap transition-all duration-600 relative flex flex-col items-center hover:opacity-100`} 
+                                } p-0 px-2 sm:px-1 md:px-1 lg:px-2 whitespace-nowrap transition-all duration-600 relative flex flex-col items-center hover:opacity-100 cursor-pointer`} 
                             href={item.href}                      
                         >
-                        <p className='text-xs sm:text-xs md:text-md lg:text-lg'>
+                        <p className='text-xs sm:text-xs md:text-md lg:text-lg cursor-pointer'>
                         {item.title}
                             </p> 
                             {pathname === item.href ? (
@@ -168,7 +176,7 @@ export default function NavigationBar() {
             }}
             >
             <h1 className="font-superRetro italic text-xs align-middle p-0 w-2/3 items-center overflow-x-visible">
-                Ruby Parker-Harbord
+                Ru Parker-Harbord
             </h1>
             <section className="flex flex-row justify-end items-center w-1/3">
                 <button onClick={() => setNavigationModalOpen(!navigationModalOpen)} className="p-0 pr-0.5 text-right font-superRetro italic text-xs align-middle items-center overflow-x-visible">Menu</button>

@@ -17,8 +17,8 @@ const superRetro = localFont({
 })
 
 export const metadata = {
-  title: 'Ruby Parker-Harbord',
-  description: 'Ruby Parker-Harbord is a Professional Photographer and Videographer based in London',
+  title: 'Ru Parker-Harbord',
+  description: 'Ru Parker-Harbord is a Professional Photographer and Videographer based in London',
 }
 
 export default function RootLayout({

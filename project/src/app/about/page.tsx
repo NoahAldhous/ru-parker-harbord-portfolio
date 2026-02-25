@@ -44,7 +44,7 @@ export default function Page(){
                     quality={100}
                     placeholder="blur" 
                     src={profilePicture} 
-                    alt='ruby in profile'
+                    alt='ru in profile'
                     className="cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
                     onClick={handleClick}
                 />
@@ -79,7 +79,7 @@ export default function Page(){
                     Hello
                 </h2>
                 <p>
-                I'm Ruby. I'm a Photographer, Writer and Director based in London.
+                I'm Ru. I'm a Photographer, Writer and Director based in London.
                 <br/>
                 <br/>
                 I have always enjoyed photography and before freelancing professionally in this field, I worked primarily in Film and Television. I love to tell stories with visuals and to explore what a picture can say.
