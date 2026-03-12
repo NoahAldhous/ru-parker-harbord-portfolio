@@ -16,7 +16,7 @@ export default function Page(){
         {
             firstLineText:'Send me an',
             secondLineText:'Email',
-            url:'mailto:rubyparkerphotography@gmail.com',
+            url:'mailto:ruparkerhardbord@gmail.com',
             isDownload:false
         },
         // {
