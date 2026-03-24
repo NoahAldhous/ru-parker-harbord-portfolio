@@ -10,13 +10,19 @@ export default function Page(){
         {
             firstLineText:'Follow me on',
             secondLineText:'Instagram',
-            url:'https://www.instagram.com/rubyparkerh/',
+            url:'https://www.instagram.com/ruparkerphoto/',
+            isDownload:false
+        },
+        {
+            firstLineText:'See my latest',
+            secondLineText:'Wedding Photograpy',
+            url:'https://www.instagram.com/rushootsweddings/',
             isDownload:false
         },
         {
             firstLineText:'Send me an',
             secondLineText:'Email',
-            url:'mailto:ruparkerhardbord@gmail.com',
+            url:'mailto:ruparkerharbord@gmail.com',
             isDownload:false
         },
         // {
