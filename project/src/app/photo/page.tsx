@@ -1,7 +1,6 @@
 import ProjectCard from '../components/NewProjectCard';
 import Footer from '../components/Footer'
 
-
 //image imports
 import cafeMelo from '../../../public/images/projects/cafe-melo/melo14.jpg';
 import engagements from '../../../public/images/projects/engagements/engagements16.jpg';

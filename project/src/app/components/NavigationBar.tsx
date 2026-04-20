@@ -45,8 +45,8 @@ export default function NavigationBar() {
             href: "/"
           },
           {
-            title: "Projects" ,
-            href: "/project"
+            title: "Photo" ,
+            href: "/photo"
           },
           {
             title: "Film Photography" ,
