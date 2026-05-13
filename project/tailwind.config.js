@@ -13,6 +13,8 @@ module.exports = {
         '3000': '3000'
       },
       spacing:{
+        'navbar-height': '8rem',
+        'page-horizontal-padding': '6rem',
         '1/2': '50%',
         '1/3': '33.333333%',
         '2/3': '66.666667%',
@@ -44,25 +46,26 @@ module.exports = {
       },
       backgroundColor: theme => ({
         ...theme('colors'),
-        'primary': '#E5E7EB',
+        'primary': '#FFFFFF',
         'secondary': '#38423B',
-        'dark': '#272A27'
+        'dark': '#FFFFFF'
       }),
       colors: {
-        'bgprimary': '#E5E7EB',
+        'bgprimary': '#FFFFFF',
         'bgsecondary': '#38423B',
-        'bgdark': '#272A27',
-        'semiPrimary': '#E5E7EB80',
+        'bgdark': '#FFFFFF',
+        'semiPrimary': '#FFFFFF90',
         'semiSecondary': '#38423B80',
-        'semiDark': '#272A2780'
+        'semiDark': '#FFFFFF90'
       },
       textColor: {
-      'primary': '#E5E7EB',
-      'dark': '#272A27',
+      'primary': '#070707',
+      'dark': '#070707',
       },
       fontFamily: {
-        superRetro: ['var(--superRetro)']
-      }
+        superRetro: ['var(--superRetro)'],
+        displayFont: ['var(--tropiLand)']
+      },
     },
   },
   plugins: [],

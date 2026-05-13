@@ -1,6 +1,7 @@
 import './globals.css';
 import localFont from 'next/font/local';
 import NavigationBar from './components/NavigationBar';
+import local from 'next/font/local';
 
 const superRetro = localFont({
   src: [
@@ -16,6 +17,16 @@ const superRetro = localFont({
   variable: '--superRetro'
 })
 
+const tropiLand = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Tropi-Land.ttf',
+      style: 'normal'
+    }
+  ],
+  variable: '--tropiLand'
+})
+
 export const metadata = {
   title: 'Ru Parker-Harbord',
   description: 'Ru Parker-Harbord is a Professional Photographer and Videographer based in London',
@@ -28,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-          <body className={`${superRetro.variable} overflow-x-hidden`}>
+          <body className={`${superRetro.variable} ${tropiLand.variable} overflow-x-hidden`}>
             <NavigationBar/>
             <nav></nav>
             {children}
