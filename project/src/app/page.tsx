@@ -4,20 +4,13 @@ import { useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Footer from '../app/components/Footer'
 
-//image import
+//image imports
+import portrait from '../../public/images/home/portrait.jpg';
+import videography from '../../public/images/home/videopgrahy.jpg'
+import weddings from '../../public/images/home/weddings.jpg'
+
+//OLD image import
 import home1 from '../../public/images/home-page/home1.jpg';
-import home2 from '../../public/images/home-page/home2.jpg';
-import home3 from '../../public/images/home-page/home3.jpg';
-import home4 from '../../public/images/home-page/home4.jpg';
-import home5 from '../../public/images/home-page/home5.jpg';
-import home6 from '../../public/images/home-page/home6.jpg';
-import home7 from '../../public/images/home-page/home7.jpg';
-import home8 from '../../public/images/home-page/home8.jpg';
-import home9 from '../../public/images/home-page/home9.jpg';
-import home10 from '../../public/images/home-page/home10.jpg';
-import home11 from '../../public/images/home-page/home11.jpg';
-import home12 from '../../public/images/home-page/home12.jpg';
-import home13 from '../../public/images/home-page/home13.jpg';
 
 //light gallery
 import type {LightGallery} from 'lightgallery/lightgallery';
@@ -30,6 +23,7 @@ import '../app/dependencies/lightgallery/css/lg-thumbnail.css';
 
 // import plugins
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import ProjectCard from './components/NewProjectCard';
 
 export default function Homepage() {
 
@@ -107,16 +101,16 @@ export default function Homepage() {
 
   return (  
     <main className="flex sm:h-full sm:w-screen flex-col items-center pt-24 bg-primary dark:bg-dark overflow-y-visible overflow-x-hidden">
-      <section className="bg-red-400 space-y-6 sm:space-y-0 flex h-full flex-col justify-start items-center p-2 sm:p-8 w-full">
-        <section className="bg-green-50 w-4/5 flex flex-row justify-evenly items-center py-12">
+      <section className="space-y-6 sm:space-y-0 flex h-full flex-col justify-start items-center p-2 sm:p-8 w-full">
+        <section className="w-4/5 flex flex-row justify-evenly items-center py-24">
           <Image
             priority={true}
             placeholder='blur'
-            src={home1}
-            alt='home1'
+            src={portrait}
+            alt='portrait'
             className='w-1/3 aspect-square object-cover rounded-3xl'
           />
-          <p className='bg-gray-500 w-1/2 h-4/5 text-lg'>
+          <p className='w-1/2 h-4/5 text-xl tracking-tight'>
             Hi! I&apos;m Ru - a photographer, videographer and born and raised Londoner.
             <br/>
             <br/>
@@ -126,10 +120,30 @@ export default function Homepage() {
             I love telling stories visually and always have a camera in my hand. Whether it&apos;s being part of behind the scenes of film sets or on a couple&apos;s big day - I want to express the stories being told with images.
           </p>
         </section>
-        <section className="bg-blue-50 w-full flex flex-col items-center">
-          <h2 className="font-displayFont text-8xl">My work</h2>
+        <section className="w-full flex flex-col items-center py-10">
+          <h2 className="font-displayFont text-8xl pb-10">My work</h2>
+          <section className="w-full flex flex-row justify-evenly flex-wrap">
+            <ProjectCard 
+                imageSource={home1} 
+                projectTitle='BTS and stills' 
+                imageAlt='bts'
+                url='bts-and-stills'
+            />
+            <ProjectCard 
+                imageSource={weddings} 
+                projectTitle='Weddings' 
+                imageAlt='weddings'
+                url='weddings'
+            />
+            <ProjectCard 
+                imageSource={videography} 
+                projectTitle='Videography' 
+                imageAlt='videopgraphy'
+                url='videography'
+            />
+          </section>
         </section>
-        <section className="bg-blue-50 w-full flex justify-center">
+        <section className="w-full flex justify-center py-24">
           <h2 className="font-displayFont text-8xl">Drop me a line</h2>
         </section>
         {/* <AnimatePresence mode="wait">

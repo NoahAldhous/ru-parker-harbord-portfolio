@@ -28,7 +28,7 @@ export default function ProjectCard({imageSource, projectTitle, imageAlt, url}:P
     }
 
         return <motion.div 
-                    className = "w-full sm:w-3/4 md:w-2/3 lg:w-1/2"
+                    className = "w-2/5 aspect-[3/2] p-12"
                     key={imageAlt}
                     initial='initialState'
                     whileInView='inViewState'
@@ -40,20 +40,23 @@ export default function ProjectCard({imageSource, projectTitle, imageAlt, url}:P
                     }}
             variants={divVariants}
             >
-                <div className='relative pb-portrait w-full h-full group overflow-hidden'>
+                <div className='relative w-full group overflow-hidden aspect-[3/2] rounded-3xl'>
                     <Image 
                         placeholder='blur' 
-                        className="h-full w-full absolute object-cover bottom-0 transition duration-300 lg:group-hover:scale-125" 
+                        className="h-full absolute object-cover bottom-0 transition duration-300 lg:group-hover:scale-125" 
                         priority={true}
                         src={imageSource} 
                         alt={imageAlt} 
                         quality={100}
                     />
                     <Link 
-                        className='transition duration-300 absolute text-2xl text-primary dark:text-dark h-full w-full flex justify-center items-center text-center tracking-wide bg-dark dark:bg-primary opacity-0 lg:hover:opacity-80' 
+                        className='group absolute h-full w-full flex justify-center items-center text-center' 
                         href={`/photo/${url}`}
                     >
-                        {projectTitle}
+                        <div className='absolute inset-0 transition duration-300 bg-dark dark:bg-primary opacity-30 group-hover:opacity-80'></div>
+                        <p className='relative opacity-95 font-displayFont z-10 text-6xl group-hover:opacity-100 text-primary dark:text-dark'>
+                            {projectTitle}
+                        </p>
                     </Link> 
                 </div>
                 <Link href={`/photo/${url}`} className="mt-6 lg:hidden">
