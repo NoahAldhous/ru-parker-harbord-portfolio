@@ -107,8 +107,32 @@ export default function Homepage() {
 
   return (  
     <main className="flex sm:h-full sm:w-screen flex-col items-center pt-24 bg-primary dark:bg-dark overflow-y-visible overflow-x-hidden">
-      <section className="space-y-6 sm:space-y-0 flex h-full flex-col justify-start items-start p-2 sm:p-8 w-full ">
-        <AnimatePresence mode="wait">
+      <section className="bg-red-400 space-y-6 sm:space-y-0 flex h-full flex-col justify-start items-center p-2 sm:p-8 w-full">
+        <section className="bg-green-50 w-4/5 flex flex-row justify-evenly items-center py-12">
+          <Image
+            priority={true}
+            placeholder='blur'
+            src={home1}
+            alt='home1'
+            className='w-1/3 aspect-square object-cover rounded-3xl'
+          />
+          <p className='bg-gray-500 w-1/2 h-4/5 text-lg'>
+            Hi! I&apos;m Ru - a photographer, videographer and born and raised Londoner.
+            <br/>
+            <br/>
+            After graduating from film school, I got my first job in the film and TV industry as a runner, moving on to writing, working as a Director&apos;s Assistant and more. All while continuing to shoot videos and photos for friends and companies I worked for.
+            <br/>
+            <br/>
+            I love telling stories visually and always have a camera in my hand. Whether it&apos;s being part of behind the scenes of film sets or on a couple&apos;s big day - I want to express the stories being told with images.
+          </p>
+        </section>
+        <section className="bg-blue-50 w-full flex flex-col items-center">
+          <h2 className="font-displayFont text-8xl">My work</h2>
+        </section>
+        <section className="bg-blue-50 w-full flex justify-center">
+          <h2 className="font-displayFont text-8xl">Drop me a line</h2>
+        </section>
+        {/* <AnimatePresence mode="wait">
           <div className='space-y-6 sm:space-y-0  w-full flex-col-reverse flex sm:flex-row sm:justify-end'>
             <motion.div 
               className='sm:p-8 flex flex-col justify-end sm:mb-24'
@@ -358,9 +382,9 @@ export default function Homepage() {
                 className='cursor-pointer sm:mt-24 sm:mr-2 sm:mb-32 sm:w-5/12'
             />
           </motion.div>
-        </AnimatePresence>
+        </AnimatePresence> */}
       </section>
-        <LightGalleryComponent
+        {/* <LightGalleryComponent
           onInit={(ref) => {
               if (ref) {
                   lightboxRef.current = ref.instance
@@ -374,7 +398,7 @@ export default function Homepage() {
               src: image.src, 
               thumb: image.thumb
           }))}
-        />
+        /> */}
         <Footer/>
     </main>
   )
