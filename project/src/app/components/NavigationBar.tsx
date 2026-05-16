@@ -60,7 +60,7 @@ export default function NavigationBar() {
 
   return (
     <>
-      <div className="hidden sm:flex flex-row w-screen h-navbar-height top-0 left-0 overflow-x-hidden fixed z-2000 px-6 sm:px-page-horizontal-padding justify-between items-center bg-inherit">
+      <div className="hidden sm:flex flex-row w-screen h-navbar-height top-0 left-0 overflow-x-hidden fixed z-2000 px-6 sm:px-page-horizontal-padding justify-between items-center bg-gradient-to-b from-white via-white to-transparent">
         <Link
           onClick={handleClose}
           key={"/"}
