@@ -24,6 +24,7 @@ import '../app/dependencies/lightgallery/css/lg-thumbnail.css';
 // import plugins
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import ProjectCard from './components/NewProjectCard';
+import Link from 'next/link';
 
 export default function Homepage() {
 
@@ -144,7 +145,9 @@ export default function Homepage() {
           </section>
         </section>
         <section className="w-full flex justify-center py-24">
-          <h2 className="font-displayFont text-8xl">Drop me a line</h2>
+          <Link href='/contact'>
+            <h2 className="font-displayFont text-8xl opacity-95 hover:-translate-y-2 hover:opacity-100 transition duration-200">Drop me a line</h2>
+          </Link>
         </section>
         {/* <AnimatePresence mode="wait">
           <div className='space-y-6 sm:space-y-0  w-full flex-col-reverse flex sm:flex-row sm:justify-end'>

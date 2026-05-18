@@ -68,7 +68,7 @@ export default function NavigationBar() {
           href={"/"}
         >
           <motion.h1
-            className="mix-blend-difference tracking-wide font-displayFont text-xs sm:text-sm md:text-xl lg:text-8xl align-middle w-full items-center overflow-x-visible"
+            className="mix-blend-difference tracking-wide font-displayFont text-xs sm:text-4xl md:text-5xl lg:text-7xl align-middle w-full items-center overflow-x-visible"
             initial="initialState"
             animate="animateState"
             exit="exitState"
@@ -131,7 +131,7 @@ export default function NavigationBar() {
               </p>
               {pathname === item.href ? (
                 <motion.div
-                  className="bottom-0 inset-x-0 sm:h-px md:h-px lg:h-0.5 bg-dark dark:bg-primary rounded-lg z-0 w-full"
+                  className="bottom-0 inset-x-0 sm:h-px md:h-px lg:h-0.5 bg-black dark:bg-black rounded-lg z-0 w-full"
                   layoutId="underline"
                 />
               ) : null}

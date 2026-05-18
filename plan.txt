@@ -41,3 +41,20 @@ TODO / FIX
     19. fix breakpoint image styling on home page for mobile screens. ✅
     20.  
     
+    NEW PLAN 2026:
+        General Features
+            colour changes
+            font
+            navbar
+            spacings
+            Add vercel analytics to count page views
+        
+        HOME
+
+        CONTACT
+
+        VIDEO
+
+        WEDDINGS
+
+        BTS PHOTOS
