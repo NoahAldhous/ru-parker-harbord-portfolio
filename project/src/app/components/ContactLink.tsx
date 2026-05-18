@@ -3,15 +3,13 @@
 import Link from 'next/link';
 
 interface ContactLinkProps {
-    firstLineText: string;
-    secondLineText: string;
+    text: string;
     url: string;
     isDownload: boolean;
 }
 
-export default function ContactLink({firstLineText, secondLineText, url, isDownload}: ContactLinkProps){
+export default function ContactLink({text, url, isDownload}: ContactLinkProps){
     return <div>    
-        <p className="text-md font-superRetro italic sm:text-lg md:text-xl lg:text-2xl opacity-90">{firstLineText}</p>
-        <Link download={isDownload} className="font-superRetro italic text-3xl sm:text-3xl md:text-4xl lg:text-6xl align-middle tracking-wider transition-all duration-600 lg:opacity-90 lg:hover:opacity-100 hover:pl-4" href={url} target="_blank">{secondLineText}</Link>
+        <Link download={isDownload} className="font-displayFont tracking-tight text-3xl sm:text-4xl md:text-6xl lg:text-6xl align-middle transition-all duration-600 lg:opacity-90 lg:hover:opacity-100 hover:tracking-wider" href={url} target="_blank">{text}</Link>
     </div>
 }
