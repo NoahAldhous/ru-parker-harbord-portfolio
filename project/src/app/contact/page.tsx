@@ -114,7 +114,9 @@ export default function Page() {
           >
             <motion.p variants={divVariant}>
               If you are enquiring about wedding bookings please use the contact
-              form on my wedding page found here
+              form on my wedding page found{" "}
+              <Link href={'weddings/contact'} className="underline hover:-translate-y-1 inline-block transition duration-200">here</Link>
+              .
             </motion.p>
             <motion.br variants={divVariant}/>
             <motion.p variants={divVariant}>
